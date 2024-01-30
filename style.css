@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    --main-font: "Roboto Mono", monospace;
+    --book-display-bg : rgb(209 250 229);
+    --button-color: rgb(20 184 166);
+    --font-color: rgb(12 74 110);
+    --button-text-color: rgb(255, 255, 255);
+}
+
+body{
+    height: 100vh;
+}
+
+.main-grid-cols{
+    display: grid;
+    grid-template-columns: 3.2fr 1.8fr;
+}
+
+.books-display-section{
+    background-color: var(--book-display-bg);
+    height: 100vh;
+}
+
+.books-display-section .libruary-content{
+    padding: 2% 2%;
+}
+
+.books-display-section .libruary-content .heading{
+    font-size: clamp(1.5rem, 2vw, 2.3rem);
+    font-family: var(--main-font);
+    color: var(--font-color);
+}
+
+.books-enter-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.welcome-para{
+    display: grid;
+    grid-template-columns: 1fr;             
+    padding-left: 5%;
+}
+
+.button{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.button .inside-button{
+    padding: 5% 10%;
+    font-size: clamp(1rem, 1.165vw, 1.5rem);
+    font-family: var(--main-font);
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    font-weight: 500;
+    border: none;
+}
+
+.welcome-para p{
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-family: var(--main-font);
+    color: var(--font-color);
+}
+
