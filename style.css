@@ -10,6 +10,7 @@
     --button-color: rgb(20 184 166);
     --font-color: rgb(12 74 110);
     --button-text-color: rgb(255, 255, 255);
+    --cancel-btn-color: rgb(225, 29, 72);
 }
 
 body{
@@ -66,8 +67,89 @@ body{
 }
 
 .welcome-para p{
-    font-size: clamp(2rem, 3vw, 4rem);
+    font-size: clamp(1.5rem, 3vw, 4rem);
     font-family: var(--main-font);
     color: var(--font-color);
 }
 
+#add-book-btn{
+    margin: 0 auto;
+}
+
+/* ---------- DIALOG FORM ---------- */
+
+dialog {
+    border: none !important;
+    /* box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
+    padding: 1.2rem 2rem;
+    min-width: 20vw;
+    max-width: 22vw;
+    /* max-width: 400px; */
+}
+  
+form{
+    display: grid;
+    grid-template-rows: repeat(4, 0.8fr) 1.5fr;
+    gap: 0.7rem;
+}
+
+.book-name,
+.author-name,
+.no-of-pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.is-read{
+    display: flex;
+    align-items: center;
+}
+
+.popup-btn{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#input-close-save,
+#input-close-cancel{
+    padding: 0.8rem;
+    font-size: clamp(1rem, 1.165vw, 1.5rem);
+    font-family: var(--main-font);
+    color: var(--button-text-color);
+    font-weight: 500;
+    border: none;
+}
+
+.btn-green{
+    background-color: var(--button-color);
+}
+
+.btn-red{
+    background-color: var(--cancel-btn-color);
+}
+
+.book-name-label,
+.author-name-label,
+.no-of-pages-label,
+.is-read-label{
+    font-size: 1.345rem;
+    font-family: var(--main-font);
+    color: var(--font-color);
+}
+
+input{
+    padding: 0.4rem;
+}
+
+input[type="checkbox"] {
+    width: 3em;
+    height: 1.3rem;
+    accent-color: var(--button-color);
+}
+
+input[type="text"],
+input[type="number"]{
+    height: 2.5rem;
+    width: 20rem;
+    font-size: 1.3rem;
+}
