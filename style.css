@@ -13,9 +13,13 @@
     --cancel-btn-color: rgb(225, 29, 72);
     /* --container-bg-color: rgb(110 231 183); */
     --container-text-color: rgb(27, 27, 27);  
-    --container-bg-color: rgb(94 234 212); 
+    /* --container-bg-color: rgb(94 234 212);  */
+    --container-bg-color: rgb(140, 248, 212);
     --container-del-btn: rgb(251 113 133);
     --container-sts-btn: rgb(34, 173, 162);
+    --remove-hover-color: rgb(231, 54, 81);
+    --sts-hover-color: rgb(23, 131, 122);
+    --add-a-book-hover: rgb(17, 148, 133);
 }
 
 body{
@@ -29,7 +33,7 @@ body{
 
 .books-display-section{
     background-color: var(--book-display-bg);
-    height: 100vh;
+    height: 100dvh;
 }
 
 .books-display-section .libruary-content{
@@ -69,6 +73,10 @@ body{
     background-color: var(--button-color);
     font-weight: 500;
     border: none;
+}
+
+.button .inside-button:hover{
+    background-color: var(--add-a-book-hover);
 }
 
 .welcome-para p{
@@ -173,7 +181,7 @@ input[type="number"]{
 }
 
 .book{
-    padding: 3% 3%;
+    padding: 5% 5%;
     background-color: var(--container-bg-color);
     display: grid;
     /* grid-template-rows: repeat(6, 0.5fr); */
@@ -181,14 +189,14 @@ input[type="number"]{
 }
 
 .book p{
-    font-size: 1.345rem;
+    font-size: clamp(1rem, 1.165vw, 1.3rem);
     font-family: var(--main-font);
     color: var(--container-text-color);
 }
 
 .book button{
     padding: 4% 6%;
-    font-size: clamp(1rem, 1.165vw, 1.5rem);
+    font-size: clamp(1rem, 1.165vw, 1.3rem);
     font-family: var(--main-font);
     color: var(--button-text-color);
     /* background-color: var(--button-color); */
@@ -200,8 +208,17 @@ input[type="number"]{
     background-color: var(--container-del-btn);
 }
 
+.book .remove-btn:hover{
+    background-color: var(--remove-hover-color);
+    /* color: ; */
+}
+
 .book .sts-btn{
     background-color: var(--container-sts-btn);
+}
+
+.book .sts-btn:hover{
+    background-color: var(--sts-hover-color);
 }
 
 /* ---------- DIALOG BOX ---------- */
@@ -211,7 +228,7 @@ dialog {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px;
+    padding: 1.2rem;
     height: fit-content;
 }
 
