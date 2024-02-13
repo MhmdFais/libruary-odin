@@ -95,8 +95,7 @@ dialog {
     border: none !important;
     /* box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
     padding: 1.2rem 2rem;
-    min-width: 20vw;
-    max-width: 22vw;
+    width: clamp(250px, 30vw, 350px);
     /* max-width: 400px; */
 }
   
