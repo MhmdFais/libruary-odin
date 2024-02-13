@@ -41,7 +41,7 @@ saveBtn.addEventListener("click", () => {
 
   if (document.querySelector("[data-modal-form]").checkValidity()) {
     addBookToLibrary(bookTitle, authorName, noOfPages, isRead);
-    displayBooks(bookTitle, authorName, noOfPages, isRead);
+    displayBooks();
 
     // Reset form after submission
     dialog.close();

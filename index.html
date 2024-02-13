@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libruary | Odin</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-grid-cols">
-        <div class="books-display-section">
-            <div class="libruary-content">
-                <div class="heading">Your Books</div>
-            </div>
-            <div class="entered-book-display-section">
-                <div class="book-list">
-                    
-                </div>
-            </div>
+      <div class="books-display-section">
+        <div class="libruary-content">
+          <div class="heading">Your Books</div>
         </div>
-        <div class="books-enter-section">
-            <div class="book-add-section-content">
-                <div class="welcome-para">
-                    <p>Welcome To The <br> Libruary</p>
-                </div>
-                <div class="button">
-                    <button type="submit" class="inside-button" id="add-book-btn">Add a Book</button>
-                </div>
-                <div class="dialog-wrapper">
-                    <dialog data-modal>  
-                        <form data-modal-form method="dialog">
-                           
-                            <div class="book-name">
-                                
-                                <label for="book-name" class="book-name-label">Book Name </label>
-                                <input type="text" id="book-name" required>
-                                
-                            </div>
-                            
-                            <div class="author-name">
-                                
-                                <label for="author-name" class="author-name-label">Author Name </label> 
-                                <input type="text" id="author-name" required>
-                                
-                            </div>
-                            
-                            <div class="no-of-pages">
-                               
-                                <label for="no-of-pages" class="no-of-pages-label">No.of Pages </label>
-                                <input type="number" id="no-of-pages" required>
-                                
-                            </div>
-                            
-                            <div class="is-read">
-                                
-                                <label for="is-read" class="is-read-label">Is read? </label>
-                                <input type="checkbox" id="is-read" class="is-read-checkbox">
-                                
-                            </div>
-                            
-                            <div class="popup-btn">
-                                <div class="submit-btn">
-                                    <input type="submit" id="input-close-save" value="Save" class="btn-green">
-                                </div>
-                                <div class="cancel-btn">
-                                    <input type="submit" id="input-close-cancel" value="Close" class="btn-red">
-                                </div>
-                            </div>
-                        </form>
-                    </dialog>
-                </div>
-                <output></output>
-            </div>
+        <div class="entered-book-display-section">
+          <div class="book-list"></div>
         </div>
-    </div>
-    <script src="./script.js"></script>
-</body>
-</html>
+      </div>
+      <div class="books-enter-section">
+        <div class="book-add-section-content">
+          <div class="welcome-para">
+            <p>
+              Welcome To The <br />
+              Libruary
+            </p>
+          </div>
+          <div class="button">
+            <button type="submit" class="inside-button" id="add-book-btn">
+              Add a Book
+            </button>
+          </div>
+          <div class="dialog-wrapper">
+            <dialog data-modal>
+              <form data-modal-form method="dialog">
+                <div class="book-name">
+                  <label for="book-name" class="book-name-label"
+                    >Book Name
+                  </label>
+                  <input type="text" id="book-name" required />
+                </div>
 
+                <div class="author-name">
+                  <label for="author-name" class="author-name-label"
+                    >Author Name
+                  </label>
+                  <input type="text" id="author-name" required />
+                </div>
+
+                <div class="no-of-pages">
+                  <label for="no-of-pages" class="no-of-pages-label"
+                    >No.of Pages
+                  </label>
+                  <input type="number" id="no-of-pages" required />
+                </div>
+
+                <div class="is-read">
+                  <label for="is-read" class="is-read-label">Is read? </label>
+                  <input
+                    type="checkbox"
+                    id="is-read"
+                    class="is-read-checkbox"
+                  />
+                </div>
+
+                <div class="popup-btn">
+                  <div class="submit-btn">
+                    <input
+                      type="submit"
+                      id="input-close-save"
+                      value="Save"
+                      class="btn-green"
+                    />
+                  </div>
+                  <div class="cancel-btn">
+                    <input
+                      type="submit"
+                      id="input-close-cancel"
+                      value="Close"
+                      class="btn-red"
+                    />
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <output></output>
+        </div>
+      </div>
+    </div>
+    <!-- CONSTRUCTOR IMPLEMENTATION -->
+    <!-- <script src="./script.js"></script> -->
+
+    <!-- CLASS IMPLEMENTATION -->
+    <script src="./app.js"></script>
+  </body>
+</html>
