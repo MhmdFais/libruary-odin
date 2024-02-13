@@ -20,6 +20,7 @@
     --remove-hover-color: rgb(231, 54, 81);
     --sts-hover-color: rgb(23, 131, 122);
     --add-a-book-hover: rgb(17, 148, 133);
+    --red-btn-hover: rgb(161, 39, 58);
 }
 
 body{
@@ -140,11 +141,19 @@ form{
     background-color: var(--cancel-btn-color);
 }
 
+.btn-red:hover{
+    background-color: var(--red-btn-hover);
+}
+
+.btn-green:hover{
+    background-color: var(--sts-hover-color);
+}
+
 .book-name-label,
 .author-name-label,
 .no-of-pages-label,
 .is-read-label{
-    font-size: 1.345rem;
+    font-size: clamp(1rem, 1.165vw, 1.3rem);
     font-family: var(--main-font);
     color: var(--font-color);
 }
@@ -154,6 +163,8 @@ input{
 }
 
 input[type="checkbox"] {
+    /* width: clmap(3em, 3.5em, 4em);
+    height: clmap(1.3rem, 1.6rem, 1.9rem); */
     width: 3em;
     height: 1.3rem;
     accent-color: var(--button-color);
